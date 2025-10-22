@@ -42,10 +42,10 @@ COPY runner.sh /runner.sh
 RUN chmod +x /runner.sh
 
 # Expose ports
-EXPOSE 80
+EXPOSE 8080
 
 ENTRYPOINT ["/runner.sh"]
 
 # Set the default command to execute
 # when creating a new container
-CMD ["npm", "start"]
+#CMD ["npm", "start"]
