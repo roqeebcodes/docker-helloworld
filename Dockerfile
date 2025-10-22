@@ -35,7 +35,7 @@ RUN mkdir /etc/nginx/logs
 ADD index.html /www/data/
 
 # Append "daemon off;" to the beginning of the configuration
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+# RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 # Create a runner script for the entrypoint
 COPY runner.sh /runner.sh
