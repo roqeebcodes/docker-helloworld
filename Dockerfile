@@ -48,4 +48,4 @@ ENTRYPOINT ["/runner.sh"]
 
 # Set the default command to execute
 # when creating a new container
-CMD ["nginx"]
+CMD ["npm", "start"]
